@@ -16,9 +16,9 @@ template:
 # Actions to take place after the learner registers, but before they start interacting with their repo
 
 before:
-- type: # the type of action, full list at https://github.github.com/learning-lab-equipment/#/actions/
-  # some actions require additional options, those should appear below `type:`
-  # you can execute multiple actions in the `before` block
+- type:           # the type of action, full list at https://github.github.com/learning-lab-equipment/#/actions/
+                  # some actions require additional options, those should appear below `type:`
+                  # you can execute multiple actions in the `before` block
 
 # Steps for the course
 # A list of steps that take the learner through the course
