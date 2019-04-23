@@ -28,11 +28,13 @@ before:
 # Create one step for each action that a learner will complete
 
 steps:
-- title: # the title of the step, shown to the learner in the course progress page
-  description: # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
-  event: # a list of the actions that will occur when the step is triggered by an event
+- title: Tell me your notification preference # the title of the step, shown to the learner in the course progress page
+  description: Write a comment in the issue with your notification preference. # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+  event: issue_comment # a list of the actions that will occur when the step is triggered by an event
   actions:
-  - type: # the type of action, full list at https://github.github.com/learning-lab-equipment/#/actions/
+  - type: respond
+    with: about-email-notifications.md
+  # the type of action, full list at https://github.github.com/learning-lab-equipment/#/actions/
   # some actions require additional options, those should appear below `type:`
   # you can execute multiple actions in the `before` block
   #
